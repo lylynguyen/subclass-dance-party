@@ -8,10 +8,8 @@ MovingDancer.prototype.constructor = MovingDancer;
 MovingDancer.prototype.step = function() {
     this.top =  $("body").height() * Math.random();
     this.left =  $("body").width() * Math.random();
-  setTimeout(function() {
     this.setPosition();
-    this.step()
-  }.bind(this), this.timeBetweenSteps);
+    Dancer.prototype.step.call(this);
 };
 
 
