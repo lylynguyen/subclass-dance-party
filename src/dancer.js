@@ -2,6 +2,7 @@
 var Dancer = function(top, left, timeBetweenSteps, borderColor, height, width) {
   this.top = top;
   this.left = left;
+  this.move = true;
   this.timeBetweenSteps = timeBetweenSteps;
   this.borderColor = borderColor;
   this.height = height;
@@ -36,7 +37,10 @@ Dancer.prototype.setPosition = function() {
   this.$node.css(styleSettings);
 };
 
-Dancer.prototype.lineUp = function() {
-  
-};
+
+// Dancer.prototype.lineUp = function(){
+//   for(var i=0; i<window.dancers.length; i++){
+//       window.dancers[i].
+//   }
+// }
 
