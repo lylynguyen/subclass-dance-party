@@ -10,7 +10,7 @@ $(document).ready(function() {
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
-      25
+      200
     );
 
     window.dancers.push(dancer);
@@ -23,5 +23,13 @@ $(document).ready(function() {
       currentDancer.move = !currentDancer.move;
     }
   });
+
+  // $('.lineUp').on('click', function(event){
+  //   for(var i = 0; i < window.dancers.length; i++){
+  //     var currentDancer = window.dancers[i];
+  //     var top = 50%;
+  //     var left = 50%;
+  //   };
+  // })
 
 });

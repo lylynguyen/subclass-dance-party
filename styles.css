@@ -4,11 +4,14 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
+  background-image: url('star.jpg');
+  background-size: 100% auto;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
+
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
@@ -16,12 +19,14 @@ body, a:link, a:visited, a:active{
 .topbar{
   height:32px;
   background-color: #555;
+
 }
 .title{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid white;
+
   border-radius:10px;
   position:absolute;
 }
