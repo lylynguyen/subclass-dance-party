@@ -11,7 +11,7 @@ ChangingColorsDancer.prototype.step = function() {
     this.top =  $("body").height() * Math.random();
     this.left =  $("body").width() * Math.random();
   }
-    this.possibleColors = ["#ff0000","blue","gray", "green", "pink", "yellow", "purple"];
+    this.possibleColors = ["#F7F7F7","#CDCDCD","#555555", "#CFCFCF", "E5E5E5", "F0F0F0", "999999"];
     this.borderColor = "10px solid " + this.possibleColors[Math.floor(Math.random() * this.possibleColors.length)];
     this.setPosition();
     Dancer.prototype.step.call(this);
