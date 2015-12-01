@@ -17,8 +17,7 @@ $(document).ready(function() {
     $('body').append(dancer.$node);
   });
 
-  $('.lineUp').on('click', function(e){
-    console.log('clicked lineup!')
+  $('.freeze').on('click', function(e){
     for(var i = 0; i < window.dancers.length; i++){
       var currentDancer = window.dancers[i];
       currentDancer.move = !currentDancer.move;
