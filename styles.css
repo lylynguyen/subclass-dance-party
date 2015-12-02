@@ -33,4 +33,6 @@ body, a:link, a:visited, a:active{
 .pilot{
   background-image: url('jet1.png');
   position:absolute;
+  /*float: left;
+  width: auto !important;*/
 }
