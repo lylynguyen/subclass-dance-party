@@ -41,3 +41,7 @@ body, a:link, a:visited, a:active{
   background-image: url('Earth.png');
   position: absolute:
 }
+.asteroid{
+  background-image: url('Rock_asteroid.png');
+  position: absolute;
+}
