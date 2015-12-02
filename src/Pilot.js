@@ -1,4 +1,4 @@
-var SlidingDancer = function(top, left, timeBetweenSteps) {
+var Pilot = function(top, left, timeBetweenSteps) {
   this.xVelocity = 2;
   this.yVelocity = 2;
   Dancer.call(this, top, left, timeBetweenSteps);
@@ -8,10 +8,10 @@ var SlidingDancer = function(top, left, timeBetweenSteps) {
   this.$node = $('<span class="pilot"></span>').click(handler);
 };
 
-SlidingDancer.prototype = Object.create(Dancer.prototype);
-SlidingDancer.prototype.constructor = SlidingDancer;
+Pilot.prototype = Object.create(Dancer.prototype);
+Pilot.prototype.constructor = Pilot;
 
-SlidingDancer.prototype.step = function() {
+Pilot.prototype.step = function() {
   var bodyHeight = $("body").height();
   var bodyWidth = $("body").width();
    this.height = 175;
