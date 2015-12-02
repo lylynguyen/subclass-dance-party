@@ -12,7 +12,7 @@ SlidingDancer.prototype.step = function() {
   var bodyHeight = $("body").height();
   var bodyWidth = $("body").width();
    this.height = 175;
-  this.width = 315;
+   this.width = 315;
 
   if (this.top > bodyHeight || this.top < 0) {
     this.yVelocity = -this.yVelocity;

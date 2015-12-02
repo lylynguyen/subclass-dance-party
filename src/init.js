@@ -30,14 +30,12 @@ $(document).ready(function() {
     e.preventDefault()
     for(var i = 0; i < window.dancers.length; i++){
       var currentDancer = window.dancers[i];
-      currentDancer.left = i*sep;
-      currentDancer.step()
       currentDancer.move = !currentDancer.move;
-
+      currentDancer.$node.animate({
+        top: "400px",
+        left: i*sep
+      }, 500);
     }
-    $(".pilot").animate({
-        top: "400px"
-    }, 500);
   })
 
 });
