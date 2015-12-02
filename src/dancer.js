@@ -7,7 +7,6 @@ var Dancer = function(top, left, timeBetweenSteps, borderColor, height, width) {
   this.borderColor = borderColor;
   this.height = height;
   this.width = width;
-
   // use jQuery to create an HTML <span> tag
   this.$node = $('<span class="dancer"></span>');
   this.setPosition(top, left);

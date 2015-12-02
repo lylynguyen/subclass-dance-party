@@ -14,3 +14,4 @@ MovingDancer.prototype.step = function() {
     Dancer.prototype.step.call(this);
 };
 
+

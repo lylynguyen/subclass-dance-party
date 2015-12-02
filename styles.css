@@ -30,3 +30,7 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.pilot{
+  background-image: url('jet1.png');
+  position:absolute;
+}
