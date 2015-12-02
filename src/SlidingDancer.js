@@ -2,7 +2,10 @@ var SlidingDancer = function(top, left, timeBetweenSteps) {
   this.xVelocity = 2;
   this.yVelocity = 2;
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="pilot"></span>');
+  var handler = function() {
+    alert('attack!')
+  }
+  this.$node = $('<span class="pilot"></span>').click(handler);
 };
 
 SlidingDancer.prototype = Object.create(Dancer.prototype);
