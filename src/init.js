@@ -47,16 +47,17 @@ $(document).ready(function() {
       var closestIndex = -1;
       var currentDancer = window.dancers[i];
       for (var j = 0; j < window.dancers.length; j++) {
+        if (i === j) {
+          continue;
+        }
         var otherDancer = window.dancers[j];
         var a  = Math.abs(currentDancer.top - otherDancer.top);
         var b = Math.abs(currentDancer.left - otherDancer.left);
         var distance = Math.sqrt(a*a + b*b);
-        if (distance > 0) {
           if (distance < closestDistance) {
             closestIndex = j;
             closestDistance = distance;
           }
-        }
       }
       /*window.dancers[closestIndex].$node.animate({
         top: currentDancer.top + 10,
