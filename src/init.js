@@ -24,4 +24,15 @@ $(document).ready(function() {
     }
   });
 
+  $('.lineUp').on('click', function(e) {
+    e.preventDefault()
+    for(var i = 0; i < window.dancers.length; i++){
+      var currentDancer = window.dancers[i];
+      currentDancer.move = !currentDancer.move;
+    }
+    $(".pilot").animate({
+        top: "400px"
+    }, 500);
+  })
+
 });
