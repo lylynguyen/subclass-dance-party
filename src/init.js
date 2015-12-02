@@ -59,10 +59,7 @@ $(document).ready(function() {
             closestDistance = distance;
           }
       }
-      /*window.dancers[closestIndex].$node.animate({
-        top: currentDancer.top + 10,
-        left: currentDancer.left + 10
-      }, 500);*/
+      
       window.dancers[closestIndex].top = currentDancer.top + 10;
       window.dancers[closestIndex].left = currentDancer.left + 10;
       window.dancers[closestIndex].yVelocity = currentDancer.yVelocity;

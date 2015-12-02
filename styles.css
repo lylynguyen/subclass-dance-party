@@ -5,7 +5,9 @@ body{
   margin: 0px;
   background-color:#444;
   background-image: url('star.jpg');
-  background-size: 100% auto;
+  background-size: cover;
+  background-repeat:  no-repeat;
+  background-position: center center;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -33,6 +35,9 @@ body, a:link, a:visited, a:active{
 .pilot{
   background-image: url('jet1.png');
   position:absolute;
-  /*float: left;
-  width: auto !important;*/
+   
+}
+.earth{
+  background-image: url('Earth.png');
+  position: absolute:
 }
