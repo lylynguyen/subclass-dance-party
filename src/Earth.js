@@ -1,12 +1,12 @@
-var EarthGrowing = function(top, left, timeBetweenSteps) {
+var Earth = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
 
 };
 
-EarthGrowing.prototype = Object.create(Dancer.prototype);
-EarthGrowing.prototype.constructor = EarthGrowing;
+Earth.prototype = Object.create(Dancer.prototype);
+Earth.prototype.constructor = Earth;
 
-EarthGrowing.prototype.step = function() {
+Earth.prototype.step = function() {
   if (this.move){
     this.top =  $("body").height() * Math.random();
     this.left =  $("body").width() * Math.random();

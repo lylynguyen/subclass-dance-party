@@ -1,11 +1,11 @@
-var MovingDancer = function(top, left, timeBetweenSteps) {
+var Storm = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
 };
 
-MovingDancer.prototype = Object.create(Dancer.prototype);
-MovingDancer.prototype.constructor = MovingDancer;
+Storm.prototype = Object.create(Dancer.prototype);
+Storm.prototype.constructor = Storm;
 
-MovingDancer.prototype.step = function() {
+Storm.prototype.step = function() {
   if (this.move) {
     this.top =  $("body").height() * Math.random();
     this.left =  $("body").width() * Math.random();
